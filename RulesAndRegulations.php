@@ -32,7 +32,6 @@ $Title = "Dreamstar Rules and Registration";
 <div class="header"><?php require_once("V2/_CSS_Files/menu.php"); ?></div><!-- End header -->
 <div class="content"><p class="PageTitle"><?php echo $Title; ?></p>
   
-<p><a class="dreamstar-links" href="/_PDF_Files/Dreamstar-Rules-and-Regulations.pdf" target="_blank">Download Rules and Regulations PDF</a></p>
   <h1>Competition Acceptance</h1>
 <p><strong>Entries must be  received 30 days prior to the competition date</strong>.  No phone entries will be accepted.  All entries will be accepted on a first come,  first served basis.  All entries are  limited to the amount of performance time available.  Registration may be completed online or forms  may be printed, completed and mailed.  <strong>Entries are not considered received in the  office without full payment and a completed waiver and release form</strong>.  Names and birth date of all contestants must  appear on the official entry form or the entry cannot be accepted.  </p>
   <h1><a id="AgeGroups"></a>Age Groups</h1>
