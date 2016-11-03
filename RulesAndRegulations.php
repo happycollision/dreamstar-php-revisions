@@ -34,7 +34,7 @@ $Title = "Dreamstar Rules and Registration";
   
 <p><a class="dreamstar-links" href="/_PDF_Files/Dreamstar-Rules-and-Regulations.pdf" target="_blank">Download Rules and Regulations PDF</a></p>
   <h1>Competition Acceptance</h1>
-<p><strong>Entries must be  received 30 days prior to the competition date</strong>.  No phone entries will be accepted.  All entries will be accepted on a first come,  first served basis.  All entries are  limited to the amount of performance time available.  Registration may be completed online or forms  may be printed, completed and mailed.  <strong>Entries are not considered received in the  office without full payment and a completed waiver and release form</strong>.  Names and birth date of all contestants must  appear on the official entry form or the entry cannot be accepted.  </p>
+<p><strong>Entries must be  received 30 days prior to the competition date</strong>.  No phone entries will be accepted.  All entries will be accepted on a first come,  first served basis.  All entries are  limited to the amount of performance time available.  Registration may be completed online or forms  may be printed, completed and mailed.  <strong>Entries are not considered received in the  office without full payment and a completed waiver and release form</strong>.  Names and birth date of all contestants must  appear on the official entry form or the entry cannot be accepted.  </p>
   <h1><a id="AgeGroups"></a>Age Groups</h1>
     <p>Age  group is determined by the performer&rsquo;s age as of January 1st of the  competition year. </p>
   <ul>
@@ -43,16 +43,16 @@ $Title = "Dreamstar Rules and Registration";
     <li>Teen – Ages 12 -15</li>
     <li>Senior – Ages 16 – 19</li>
   </ul>
-  <p>The  average age determines the age group for Duet/Trio, Small Groups, Large Groups,  and Line.  Add the ages (Jan. 1st  of Competition Year) of all the contestants, and then divide by the number of  contestants.  If an average age ends in  0.5 or above, round down. </p>
-  <p>Duet/Trios,  Groups, and Lines that include dancers of different age division will compete  no more than one age division younger than the oldest dancer, regardless of  average age.  (Example:  If a group includes a dancer Age 16 (Senior)  and the average age is 11 (Junior), the group will compete one level above Junior  (Teen).)   </p>
-  <p>The  youngest dancer performing in any routine must perform no less than 50% of the  routine.    </p>
+  <p>The  average age determines the age group for Duet/Trio, Small Groups, Large Groups,  and Line.  Add the ages (Jan. 1st  of Competition Year) of all the contestants, and then divide by the number of  contestants.  If an average age ends in  0.5 or above, round down. </p>
+  <p>Duet/Trios,  Groups, and Lines that include dancers of different age division will compete  no more than one age division younger than the oldest dancer, regardless of  average age.  (Example:  If a group includes a dancer Age 16 (Senior)  and the average age is 11 (Junior), the group will compete one level above Junior  (Teen).)   </p>
+  <p>The  youngest dancer performing in any routine must perform no less than 50% of the  routine.    </p>
   <h1><a id="CompetitionLevels"></a>Competition Levels</h1>
   <ul>
-    <li><strong>Twinkling  Stars</strong> – Must receive 2 hrs. or less of dance instruction per week and have  2 years or less dance experience.  Twinkling  Star dancers may participate in no more than 2 routines during the competition.</li>
-    <li><strong>Shimmering  Stars</strong> – Must receive 3 – 6 hrs. of dance instruction per week.  Shimmering Star dancers may participate in no  more than 6 routines during the competition.</li>
-    <li><strong>Dazzling  Stars</strong> – Must receive over 6 hrs. of dance instruction per week.  Dazzling Star dancers may participate in as  many routines as they wish.</li>
+    <li><strong>Twinkling  Stars</strong> – Must receive 2 hrs. or less of dance instruction per week and have  2 years or less dance experience.  Twinkling  Star dancers may participate in no more than 2 routines during the competition.</li>
+    <li><strong>Shimmering  Stars</strong> – Must receive 3 – 6 hrs. of dance instruction per week.  Shimmering Star dancers may participate in no  more than 6 routines during the competition.</li>
+    <li><strong>Dazzling  Stars</strong> – Must receive over 6 hrs. of dance instruction per week.  Dazzling Star dancers may participate in as  many routines as they wish.</li>
   </ul>
-  <p>Competition  Levels are based on total class time.  If  you have mixed level dancers in a routine and 50% of them are higher level  dancers, the routine should be entered at the higher level.  If dancers at a particular level are in too  many routines, they will be moved up to the next level of competition.  Levels may not be changed after the  registration deadline (30 days prior to the competition).  If a routine is registered incorrectly, it  can be adjudicated but will not be allowed to compete for awards.  If a level is increased for one student, all  their routines must be checked for accuracy.</p>
+  <p>Competition  Levels are based on total class time.  If  you have mixed level dancers in a routine and 50% of them are higher level  dancers, the routine should be entered at the higher level.  If dancers at a particular level are in too  many routines, they will be moved up to the next level of competition.  Levels may not be changed after the  registration deadline (30 days prior to the competition).  If a routine is registered incorrectly, it  can be adjudicated but will not be allowed to compete for awards.  If a level is increased for one student, all  their routines must be checked for accuracy.</p>
   <h1><a id="EntryDivisions"></a>Entry Divisions</h1>
   <ul>
     <li>Solo (1 performer)</li>
@@ -61,12 +61,12 @@ $Title = "Dreamstar Rules and Registration";
     <li>Large Group (10 – 19 performers)</li>
     <li>Line (20 or more performers)</li>
   </ul>
-  <p><strong>Notes - </strong>Division  placement of an entry is determined by the number of contestants who actually  perform that entry at the competition, regardless of the number of performers  who originally entered.  An entry that  changes division during the competition or is unable to perform within its  scheduled division time may be &ldquo;adjudicated only&rdquo;.  There will be no line category for Twinkling  Stars.</p>
+  <p><strong>Notes - </strong>Division  placement of an entry is determined by the number of contestants who actually  perform that entry at the competition, regardless of the number of performers  who originally entered.  An entry that  changes division during the competition or is unable to perform within its  scheduled division time may be &ldquo;adjudicated only&rdquo;.  There will be no line category for Twinkling  Stars.</p>
   <h1><a id="PerformanceCategories"></a>Performance Categories</h1>
   <ul>
-    <li><strong>Acrobatic  / Gymnastic Dance</strong> – A routine demonstrating controlled moves incorporated  with music.  The majority of the routine  must consist of acrobatic moves.</li>
-    <li><strong>Ballet</strong> – Routine must consist of ballet technique movements and classical steps.    </li>
-    <li><strong>Character </strong>– Any form of dance portraying a recognizable character.  </li>
+    <li><strong>Acrobatic  / Gymnastic Dance</strong> – A routine demonstrating controlled moves incorporated  with music.  The majority of the routine  must consist of acrobatic moves.</li>
+    <li><strong>Ballet</strong> – Routine must consist of ballet technique movements and classical steps.    </li>
+    <li><strong>Character </strong>– Any form of dance portraying a recognizable character.  </li>
     <li>C<strong>logging </strong>–  A routine must contain clogging style and technique.</li>
     <li><strong>Folkloric </strong>– Routine using ethnic styles of dance such as polkas, Hawaiian, Spanish,  Celtic, etc.</li>
     <li><strong>Hip-Hop</strong> – Routine must consist primarily of hip-hop technique.</li>
@@ -75,13 +75,13 @@ $Title = "Dreamstar Rules and Registration";
     <li><strong>Musical  Theatre</strong> – Must incorporate some form of dance and either singing, acting,  or portraying a character.</li>
     <li><strong>Open</strong> – Any routine that contains multiple styles and categories.</li>
     <li><strong>Pointe</strong> – Dance consisting of ballet technique and classical movement combined with the  use of Pointe technique.</li>
-    <li><strong>Pom-Pon</strong> – A routine incorporating the use of Pom-Pons.   Acrobatics are allowed. </li>
+    <li><strong>Pom-Pon</strong> – A routine incorporating the use of Pom-Pons.   Acrobatics are allowed. </li>
     <li><strong>Production  (Line only)</strong> – Routine using a minimum of 20 dancers which utilizes scenic  pieces and conveys a recurring theme through music or story.</li>
-    <li><strong>Tap </strong>–  Routine must consist primarily of tap technique.  No tap sounds are permitted on the music</li>
+    <li><strong>Tap </strong>–  Routine must consist primarily of tap technique.  No tap sounds are permitted on the music</li>
   </ul>
-  <p><strong>Lifts / Acrobatics – </strong>Lifts  are permitted in every category.   However, please do not come in or out of a lift as an acrobatic or  tumbling move except when performing in the acrobatic/gymnastic, Pom-Pon, or  Open categories.<br />
+  <p><strong>Lifts / Acrobatics – </strong>Lifts  are permitted in every category.   However, please do not come in or out of a lift as an acrobatic or  tumbling move except when performing in the acrobatic/gymnastic, Pom-Pon, or  Open categories.<br />
     <br />
-    <strong>Props –</strong> A prop  includes anything not worn on the body as part of the costume, such as a  hand-held hat, a cane, or any piece of costume that is removed during the  routine.  Props must come on with the  performance, and not require extensive setup.   Only those props that can be carried on by the performer or performer&rsquo;s  assistant, and are vital to the act are allowed.  No equipment or props that require  electricity or that are considered hazardous (liquids, fire, smoke, fog  devices, knives, throwing of confetti or glitter, etc.) nor live props of any  kind are allowed.  Production props must  be in place within <u>2 minutes</u> of the time the prior act has cleared the  stage.  Props for all other solo,  duet/trio or group acts must be in place within <u>1 minute</u>.  The dance floor area must be in the same  condition after your performance as before.   Failure to comply with these rules could result in loss of points or  disqualification.</p>
+    <strong>Props –</strong> A prop  includes anything not worn on the body as part of the costume, such as a  hand-held hat, a cane, or any piece of costume that is removed during the  routine.  Props must come on with the  performance, and not require extensive setup.   Only those props that can be carried on by the performer or performer&rsquo;s  assistant, and are vital to the act are allowed.  No equipment or props that require  electricity or that are considered hazardous (liquids, fire, smoke, fog  devices, knives, throwing of confetti or glitter, etc.) nor live props of any  kind are allowed.  Production props must  be in place within <u>2 minutes</u> of the time the prior act has cleared the  stage.  Props for all other solo,  duet/trio or group acts must be in place within <u>1 minute</u>.  The dance floor area must be in the same  condition after your performance as before.   Failure to comply with these rules could result in loss of points or  disqualification.</p>
   <h1><a id="TimeLimits"></a>Time Limits</h1>
   <ul>
     <li><strong>Solo, Duet/Trio</strong> – 2:45 minutes</li>
@@ -125,22 +125,22 @@ $Title = "Dreamstar Rules and Registration";
   <h1><a id="Registration"></a>Registration</h1>
   <p>Registration is available online or via paper forms. Online  Registration can be access at https://register.dreamstarnow.com; paper forms  are located on our website. <br />
     <br />
-    <strong>Release forms:</strong>  Each performer&rsquo;s parent or legal guardian  MUST sign the official Dreamstar Waiver and Release Form in order for each  participant to perform at Dreamstar.   Teachers&rsquo; signatures are not acceptable for insurance reasons.  This original signed release form must be  received in the Dreamstar office with all the completed entry forms by the  deadline date.  One release per student  is sufficient.  If the studio has a  release form signed by each student&rsquo;s parent/legal guardian that covers all  competitions entered by the studio for release from responsibility for injuries  and / or property damage,  Dreamstar will  accept a copy of that waiver and release. Download Release Form Here</p>
-  <p><strong>Scheduling: </strong>Dreamstar reserves the  right to modify a competition length or move the competition site due to  unforeseen circumstances.  Contestants  must perform on the day and time designated.    Dreamstar reserves the right to refuse entries from a studio at our  discretion.</p>
-  <p><strong>Music: </strong>Each studio must furnish its own  music for each entry on individual CDs or MP3 format flash drive.  Please let us know the format you will use  when registering (see Entry Form Instructions). All music for each routine must  be turned in to the Sound Engineer no later than ½ hr. before the beginning of  that day&rsquo;s competition.</p>
+    <strong>Release forms:</strong>  Each performer&rsquo;s parent or legal guardian  MUST sign the official Dreamstar Waiver and Release Form in order for each  participant to perform at Dreamstar.   Teachers&rsquo; signatures are not acceptable for insurance reasons.  This original signed release form must be  received in the Dreamstar office with all the completed entry forms by the  deadline date.  One release per student  is sufficient.  If the studio has a  release form signed by each student&rsquo;s parent/legal guardian that covers all  competitions entered by the studio for release from responsibility for injuries  and / or property damage,  Dreamstar will  accept a copy of that waiver and release. Download Release Form Here</p>
+  <p><strong>Scheduling: </strong>Dreamstar reserves the  right to modify a competition length or move the competition site due to  unforeseen circumstances.  Contestants  must perform on the day and time designated.    Dreamstar reserves the right to refuse entries from a studio at our  discretion.</p>
+  <p><strong>Music: </strong>Each studio must furnish its own  music for each entry on individual CDs or MP3 format flash drive.  Please let us know the format you will use  when registering (see Entry Form Instructions). All music for each routine must  be turned in to the Sound Engineer no later than ½ hr. before the beginning of  that day&rsquo;s competition.</p>
   <ul>
-    <li><strong>CD -</strong> Each individual CD must contain only one routine, be properly labeled, cued,  and ready to start.  Each CD must use the  Dreamstar preprinted labels included with your confirmation packet clearly  labeled with name of routine, entry number and name of teacher/studio.   </li>
+    <li><strong>CD -</strong> Each individual CD must contain only one routine, be properly labeled, cued,  and ready to start.  Each CD must use the  Dreamstar preprinted labels included with your confirmation packet clearly  labeled with name of routine, entry number and name of teacher/studio.   </li>
     <li><strong>MP3 – </strong>If  selected during registration a Dreamstar flash drive will be included in your  confirmation packet. We require that all music be in MP3 format. All music files  must be named using the MP3 Filename shown below. A list with your studio&rsquo;s competition  #&rsquo;s will be included with the flash drive. Be sure to have a back-up CD or  digital copy available for each of your routines.</li>
     <ul>
       <li><strong><u>MP3  Filename Guidelines:</u></strong></li>
       <li>Competition#-Song Title–Studio.mp3<br />
-        Ex:   103-Dancing All Night-Dancing Studios.mp3</li>
+        Ex:   103-Dancing All Night-Dancing Studios.mp3</li>
     </ul>
   </ul>
-<p><a id='StudioRebates'></a><strong>Studio Rebates:  </strong>A rebate of 10% of the entry fee will be  given to the studio only if the entry fee is $2,000 or more and is received in  our office at least 45 days prior to start of the competition.</p>
-  <p><strong>Protests:</strong> All protests must be  submitted by a Teacher or Studio Owner only.   The protest must be in writing, signed and received by the regional  director within 30 minutes of the incident.   Any routine that is protested due to an age discrepancy must provide  birth certificates at the time of protest.   Failure to produce age documentation could result in disqualification of  routines.  In order to submit a protest,  you must have a routine in the age group / category which is being challenged.</p>
-  <p><strong>Refunds:</strong> Absolutely no cash refunds after deadline date!  </p>
-  <p><strong>Late Entries: </strong>A  $10 late fee per entry will be assessed for entries and/or monies received  after the 30 day entry deadline.  A $10  &ldquo;Routine Order Change&rdquo; fee per change may be assessed for changes to any entry  after the schedule is created.  This  includes late changes requested before and during the competition.  All studio entries must be submitted together  or a processing fee of $10 per entry will be assessed.</p>
+<p><a id='StudioRebates'></a><strong>Studio Rebates:  </strong>A rebate of 10% of the entry fee will be  given to the studio only if the entry fee is $2,000 or more and is received in  our office at least 45 days prior to start of the competition.</p>
+  <p><strong>Protests:</strong> All protests must be  submitted by a Teacher or Studio Owner only.   The protest must be in writing, signed and received by the regional  director within 30 minutes of the incident.   Any routine that is protested due to an age discrepancy must provide  birth certificates at the time of protest.   Failure to produce age documentation could result in disqualification of  routines.  In order to submit a protest,  you must have a routine in the age group / category which is being challenged.</p>
+  <p><strong>Refunds:</strong> Absolutely no cash refunds after deadline date!  </p>
+  <p><strong>Late Entries: </strong>A  $10 late fee per entry will be assessed for entries and/or monies received  after the 30 day entry deadline.  A $10  &ldquo;Routine Order Change&rdquo; fee per change may be assessed for changes to any entry  after the schedule is created.  This  includes late changes requested before and during the competition.  All studio entries must be submitted together  or a processing fee of $10 per entry will be assessed.</p>
   <h1><a id="Scoring"></a>Scoring</h1>
   <h2>Judges</h2>
   <p>Dreamstar judges are a combination of championship caliber  competition studio directors, teachers, affiliated with major dance studios and  or currently performing dance professionals.<br />
@@ -150,12 +150,12 @@ $Title = "Dreamstar Rules and Registration";
     Minimum judges' feedback for every entry includes comments  in four main areas: Technique, Choreography, Showmanship, and Overall  Impression.</p>
   <h2>Standard Scale</h2>
   <ul>
-    <li><strong>Platinum</strong>             300 – 281</li>
-    <li><strong>High Gold</strong>            280 – 266</li>
-    <li><strong>Gold</strong>                     265 – 251</li>
-    <li><strong>High  Silver</strong>          250 – 236</li>
-    <li><strong>Silver</strong>                    235 – 221</li>
-    <li><strong>Bronze</strong>                 220 – 200</li>
+    <li><strong>Platinum</strong>             300 – 281</li>
+    <li><strong>High Gold</strong>            280 – 266</li>
+    <li><strong>Gold</strong>                     265 – 251</li>
+    <li><strong>High  Silver</strong>          250 – 236</li>
+    <li><strong>Silver</strong>                    235 – 221</li>
+    <li><strong>Bronze</strong>                 220 – 200</li>
   </ul>
   <h1><a id="Awards"></a>Awards</h1>
   <h2>Competition Recognition Awards</h2>
@@ -215,30 +215,30 @@ $Title = "Dreamstar Rules and Registration";
     <li><strong>Choreography  Awards:</strong> Specially designed awards for outstanding choreography will be  awarded at each regional competition.</li>
     <li><strong>Galaxy  Award for Most Memorable Performance:</strong> Specially designed award for the most  memorable/entertaining performances in each age group will also be awarded.</li>
   </ul>
-  <p><strong>Award Notes</strong> - All  cash awards will be awarded to the teacher or director.  There will be no ties in the Top Score,  Special &amp; Cash Awards.  In the event  of a tie, the score sheets will be returned to the judges, who will then break  the tie.</p>
+  <p><strong>Award Notes</strong> - All  cash awards will be awarded to the teacher or director.  There will be no ties in the Top Score,  Special &amp; Cash Awards.  In the event  of a tie, the score sheets will be returned to the judges, who will then break  the tie.</p>
   <h1>During the Competition</h1>
-  <p><strong>Check in with Stage  Manager – </strong>Be sure to check in with the Dreamstar Stage Manager no less than  5 numbers ahead of your scheduled performance.   Our Stage Manager ensures that all performances are ready to go on.  If you do not check in, the Dreamstar Stage  Manager assumes you are not there.<br />
+  <p><strong>Check in with Stage  Manager – </strong>Be sure to check in with the Dreamstar Stage Manager no less than  5 numbers ahead of your scheduled performance.   Our Stage Manager ensures that all performances are ready to go on.  If you do not check in, the Dreamstar Stage  Manager assumes you are not there.<br />
     <br />
-    <strong>Dressing areas –</strong> Dreamstar assigns each studio/school with a dressing area.  Please respect each other&rsquo;s belongings and  space.  See a Dreamstar staff member for  assistance in locating your assigned area.<br />
+    <strong>Dressing areas –</strong> Dreamstar assigns each studio/school with a dressing area.  Please respect each other&rsquo;s belongings and  space.  See a Dreamstar staff member for  assistance in locating your assigned area.<br />
   <br />
-  <strong>Awards – </strong>All  participants are welcome on stage during awards ceremonies.  For groups and lines, please designate a  &ldquo;captain&rdquo; to accept the award.  The  captain should know the entry number, name of the routine and number of  performers in the group.<br />
-  A minimum of 6 entries in each age group and level must be  received in order for cash awards to be presented.  All award money will be presented to the studio.  Dreamstar gift certificates will be presented  to the top score soloist.<br />
+  <strong>Awards – </strong>All  participants are welcome on stage during awards ceremonies.  For groups and lines, please designate a  &ldquo;captain&rdquo; to accept the award.  The  captain should know the entry number, name of the routine and number of  performers in the group.<br />
+  A minimum of 6 entries in each age group and level must be  received in order for cash awards to be presented.  All award money will be presented to the studio.  Dreamstar gift certificates will be presented  to the top score soloist.<br />
   <br />
   <strong>Judge Adjudication – </strong>Studio  directors are responsible to pick up<strong> </strong>flash  drive/s containing their studio&rsquo;s score sheets and verbal adjudication at the  end of the competition day.<br />
   <br />
   <strong>Video and photography  – </strong>In order to maintain the integrity of choreography and the performer&rsquo;s  experience, NO video recording of any sort or flash photography is permitted unless  specifically authorized by Dreamstar Productions.<br />
   <br />
-    <strong>National Routines – </strong>Must  contain at least 50% of original members that qualified at regionals.    You may raise the difficulty of the  routine, but not the category.<br />
+    <strong>National Routines – </strong>Must  contain at least 50% of original members that qualified at regionals.    You may raise the difficulty of the  routine, but not the category.<br />
     <br />
-    <strong>Miscellaneous – </strong>Acts  should be suitable for viewing by the general public.  Judges may deduct points on the score sheet  for any act they consider inappropriate for any reason.  Coaching of performers is strictly prohibited  during the performance.  In the unlikely  event that it is necessary for Dreamstar to cancel a competition, all entry  fees will be returned. <br />
+    <strong>Miscellaneous – </strong>Acts  should be suitable for viewing by the general public.  Judges may deduct points on the score sheet  for any act they consider inappropriate for any reason.  Coaching of performers is strictly prohibited  during the performance.  In the unlikely  event that it is necessary for Dreamstar to cancel a competition, all entry  fees will be returned. <br />
     <br />
-    Your attendance and/or participation in a Dreamstar event  constitutes your approval for the uncompensated use of any photo or video image  taken during the event in Dreamstar literature, on the Dreamstar website, or in  connection with any other Dreamstar venture.   Dreamstar cannot be responsible for lost, stolen, or broken items.    <br />
+    Your attendance and/or participation in a Dreamstar event  constitutes your approval for the uncompensated use of any photo or video image  taken during the event in Dreamstar literature, on the Dreamstar website, or in  connection with any other Dreamstar venture.   Dreamstar cannot be responsible for lost, stolen, or broken items.    <br />
     <br />
-  <strong>While in the audience  –</strong> Please keep aisles clear at all times.   Eating and drinking is allowed only in designated areas.  Do not bring food into the auditorium.  No smoking is allowed in the competition  facility.   <strong>Be sure to support all contestants with your generous applause.  Good sportsmanship is essential to a good  competition!</strong></p>
+  <strong>While in the audience  –</strong> Please keep aisles clear at all times.   Eating and drinking is allowed only in designated areas.  Do not bring food into the auditorium.  No smoking is allowed in the competition  facility.   <strong>Be sure to support all contestants with your generous applause.  Good sportsmanship is essential to a good  competition!</strong></p>
 <h1>Opportunities available</h1>
-  <p><strong>In the lobby – </strong>Visit the Dreamstar Video  Booth for videos and/or candid still shots of your amazing performances.  Studios may wish to make package purchases!<br />
+  <p><strong>In the lobby – </strong>Visit the Dreamstar Video  Booth for videos and/or candid still shots of your amazing performances.  Studios may wish to make package purchases!<br />
     <br />
-  <strong>Merchandise – </strong>Dreamstar carries the latest  fashions and styles of all the best dance merchandise.  Check out our display in the lobby!</p>
+  <strong>Merchandise – </strong>Dreamstar carries the latest  fashions and styles of all the best dance merchandise.  Check out our display in the lobby!</p>
 </div><!-- End content  -->
 <div class="tourdates"><?php require_once("V2/_CSS_Files/dates.php");?> </div> <!-- End tourdates -->
 <div class="footer"><?php require_once("V2/_CSS_Files/footer.php");?> </div> <!-- End footer -->
