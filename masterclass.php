@@ -33,8 +33,7 @@ $title = "Master Classes";
 
 <?php 
 include("judges.php");
-KimHale("True");
-JenniferGonzalez("True"); 
+JacquelineSpreadbury("True"); 
 EvelynRiceWells("True");
 ?>
 

@@ -77,7 +77,7 @@ $title = "About Our Staff";
 <?php 
 JacquelineSpreadbury("True");
 EvelynRiceWells("True");
-JenniferGonzalez("True"); 
+JenniferGonzalez("False"); 
 ?>
 
  

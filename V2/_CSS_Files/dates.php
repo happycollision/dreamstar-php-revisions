@@ -27,6 +27,9 @@ while ($results = mysql_fetch_assoc($result)) {
   $id = $results['Venue_ID'];
   $Year = $results['Year'];
   
+  // Fix for MN dates this season
+  if ($Dates == "April 14 - 16, 2017") { $Dates = "TBD"; }
+  
   # Add's Season Header
   if($Year != $PreviousYear){
     
