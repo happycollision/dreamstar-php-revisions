@@ -45,10 +45,6 @@
 				Our competition tour will be featured in 4 cities throughout the Midwestern United states and will foster dedication, discipline, and appreciation of teamwork through the dance.</p>
 			<p>
 				We look forward to seeing you this season! Dreamstar will help fulfill the dream of the dancer to shine on stage!</p>
-			<p>
-				<b>Signup Online</b>
-				- <a class="dreamstar-links" href="http://dreamstarnow.dancecompgenie.com/">Register Online Now!</a><br>
-			</p>
 			<p>&nbsp;</p>
 			<h2>Rebates</h2>
 			<p>
