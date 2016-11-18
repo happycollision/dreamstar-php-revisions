@@ -52,7 +52,7 @@
       </ul></li>
       
       <!-- <li><a href="http://dreamstarnow.dancecompgenie.com/">Register Online</a></li> -->
-      <li><a href="NewRegistration2017.php">Register Online</a></li>
+      <li><a href="http://dreamstarnow.dancecompgenie.com/">Register Online</a></li>
       
     </ul>
     </nav>
