@@ -189,7 +189,7 @@ $info= "";
 
     </div>
 
-	<div id='Venue_Hotel' class='Venue_Hotel' <?php if(!in_array($id, array(11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23))){echo 'style="display:none"'; }?>>
+	<div id='Venue_Hotel' class='Venue_Hotel' <?php if(!in_array($id, array(11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 27, 28))){echo 'style="display:none"'; }?>>
 
     Hotel Information
 
@@ -215,9 +215,16 @@ $info= "";
 		echo $tab."Hampton Inn Airport<br>$tab 5001 Fleur Drive<br>$tab Des Moines, IA 50321<br>$tab (515) 287-7300</br>$tab Mention Dreamstar to get a discounted rate";}
 	elseif($id == 19){
 		echo $tab."Boarders Inn & Suites<br>$tab 1801 Lavender Dr<br>$tab Faribault, MN 55021<br>$tab (507) 334-9464</br>$tab Mention Dreamstar to get a discounted rate";}
-	elseif($id == 20){
-		echo $tab."Country Inn & Suites<br>$tab 140 East 55th Street<br>$tab Davenport,  IA 52806<br>$tab (563) 388-6444</br>$tab Mention Dreamstar to get a discounted rate";}
-	
+	elseif(in_array($id, [20, 24])){
+		echo $tab."Country Inn & Suites<br>$tab 140 East 55th Street<br>$tab Davenport,  IA 52806<br>$tab (563) 388-6444";//</br>$tab Mention Dreamstar to get a discounted rate";}
+		}
+	elseif($id == 27){
+		echo "Holiday Inn Express of DeForest<br> 7184 Morrisonville Rd.<br> Deforest, WI 53532<br>608-846-8686";}
+	elseif($id == 25){
+		echo "Hampton Inn Des Moines Airport<br> 5001 Fleur Dr.<br> Des Moines, IA 50321<br> 515-287-7300";}
+	elseif($id == 28){
+		echo "Hilton Garden Inn Bloomington<br> 5140 American Blvd. W.<br> Bloomington, MN 55437<br> 952-831-1012";}
+
 	
 /*
 	if (false){
