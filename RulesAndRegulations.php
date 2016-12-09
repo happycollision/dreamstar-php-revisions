@@ -110,25 +110,8 @@
         </li>
       </ul>
       <p><strong>Note -</strong> 1 point will be deducted for every 30 sec. over the time limit</p>
-      <h1><a id="EntryFees"></a>Regional Entry Fees</h1>
-      <ul>
-        <li><strong>Solo</strong>: $85</li>
-        <li>
-          <strong>Duet/Trio:</strong> $45 per dancers
-          <ul>
-            <li><strong>Solo &amp; Duet/Trio extended time (up to 4:30)</strong>: $2 addl. per routine</li>
-          </ul>
-        </li>
-        <li><strong>Small Group, Large Group, Line</strong>: $35 per dancers</li>
-        <li>
-          <strong>Production (Lines Only</strong>): $35 per dancers
-          <ul>
-            <li><strong>Small Group, Large Group, Line Extended Time</strong>: $2 addl. per dancers</li>
-            <li><strong>Small Group, Large Group, Line, Production Expanded Time</strong>: $3 addl. per dancers</li>
-          </ul>
-        </li>
-        <li><strong>Entry Late Fee</strong>: $10 per entry</li>
-      </ul>
+      <h1><a id="EntryFees"></a>Entry Fees</h1>
+      <p>For registration fees, please e-mail us at <a style="color: blue" href="mailto:info@dreamstarnow.com">info@dreamstarnow.com</a> or phone us at 563-484-4143.</p>
       <h1><a id="Registration"></a>Registration</h1>
       <p>Registration is available online or via paper forms. Online Registration can be access at https://register.dreamstarnow.com; paper forms are located on our website.<br>
       <br>

@@ -18,17 +18,7 @@ $Title = "Regional Entry Fee";
 <div class="containter">
 <div class="header"><?php require_once("V2/_CSS_Files/menu.php"); ?></div><!-- End header -->
 <div class="content"><p class="PageTitle"><?php echo $Title; ?></p> 
-<ul>
-	<li><strong>Solo</strong>: $75</li>
-    <li><strong>Duet/Trio</strong>: $85        </li>
-    <li><strong> Solo &amp; Duet/Trio extended time  (up to 4:30)</strong>: $2 addl. per routine <br /></li>
-    <li><strong>Small Group, Large Group, Line</strong>: $30  per person<br /></li>
-    <li><strong>Production (Lines Only)</strong>: $35 per person</li>
-    <li><strong>SmallGroup, Large Group, Line Extended Time</strong>: $2  addl. per person</li>
-    <li><strong>Small Group, Large Group, Line,  Production Expanded Time</strong>: $3 addl. per person </li>
-    <li><strong>Entry Late Fee</strong>: $10 per entry</li>
-</ul>
-<p><strong>Note - Absolutely  no cash refunds after deadline date!</strong></p>
+  <p>For registration fees, please e-mail us at <a style="color: blue" href="mailto:info@dreamstarnow.com">info@dreamstarnow.com</a> or phone us at 563-484-4143.</p>
 
 </div><!-- End content  -->
 <div class="tourdates"><?php require_once("V2/_CSS_Files/dates.php");?> </div> <!-- End tourdates -->
