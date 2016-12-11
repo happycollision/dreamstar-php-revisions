@@ -25,7 +25,6 @@ $Title = "Entry Forms";
 
 <h3>Note: Some pages have special instructions. </h3>
 
-<p><a href="entryforms.php?Form=Entry" class="dreamstar-links">Click Here to Download Entry Form (pdf)</a></p>
 <p><a href="entryforms.php?Form=Waiver" class="dreamstar-links">Click Here to Download Waiver and Release Form (pdf)</a></p>
 <p><a href="entryforms.php?Form=Master" class="dreamstar-links">Click Here to Download Master Class Registration Form (pdf)</a></p>
 

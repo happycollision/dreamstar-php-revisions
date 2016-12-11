@@ -118,7 +118,7 @@
       <h1><a id="EntryFees"></a>Entry Fees</h1>
       <p>For registration fees, please e-mail us at <a style="color: blue" href="mailto:info@dreamstarnow.com">info@dreamstarnow.com</a> or phone us at 563-484-4143.</p>
       <h1><a id="Registration"></a>Registration</h1>
-      <p>Registration is <a style="color: blue" href="//register.dreamstarnow.com">available online</a> or via <a style="color: blue" href="/forms.php">paper forms</a>.<br>
+      <p>Registration is <a style="color: blue" href="//register.dreamstarnow.com">available online</a>.<br>
       <br>
       <strong>Release forms:</strong> Each performer&rsquo;s parent or legal guardian MUST sign the official <a style="color: blue" href="/entryforms.php?Form=Waiver">Dreamstar Waiver and Release Form</a> in order for each participant to perform at Dreamstar. Teachers&rsquo; signatures are not acceptable for insurance reasons. This original signed release form must be received in the Dreamstar office with all the completed entry forms by the deadline date. One release per student is sufficient. If the studio has a release form signed by each student&rsquo;s parent/legal guardian that covers all competitions entered by the studio for release from responsibility for injuries and / or property damage, Dreamstar will accept a copy of that waiver and release. Download Release Form Here</p>
       <p><strong>Scheduling:</strong> Dreamstar reserves the right to modify a competition length or move the competition site due to unforeseen circumstances. Contestants must perform on the day and time designated. Dreamstar reserves the right to refuse entries from a studio at our discretion.</p>
