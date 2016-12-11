@@ -225,7 +225,7 @@ $info= "";
 	elseif($id == 28){
 		echo "Hilton Garden Inn Bloomington<br> 5140 American Blvd. W.<br> Bloomington, MN 55437<br> 952-831-1012";}
 
-	
+	echo "<br>(Mention Dreamstar to get a discounted rate)";
 /*
 	if (false){
 		echo "<b>".$tab.$HotelName."</b><br/>".$tab.$HAddress."<br/>".$tab.$HCitySt." ".$HZip."<br/>";
@@ -238,7 +238,7 @@ $info= "";
 		echo $tab.'<a style="color:#009" href="http://maps.google.com/maps?geocode=&q=('.$HotelName.") ".$HAddress." ".$HZip.'">View Map</a>';			
 	}
 */
-	else{ echo $tab."Hotel Coming Soon!";}
+// 	else{ echo $tab."Hotel Coming Soon!";}
 ?>
 
     </font>
