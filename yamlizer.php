@@ -2,437 +2,400 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
+<?php
+
+require_once("connect.php");
+
+# Site Header
+
+$Title = "Competition Dates";
 
 
-<meta name="description" content="Dreamstar Productions LLC. A  Family Oriented Dance Competition Company" />
-<meta name="keywords" content="Competition Scores, Dance Competition, Family Oriented, Dancing Competitions,Dreamstar Dance Competition, Dance Dreamstar" />
+
+if(isset($_GET['id']) && $_GET['id'] > 0){
+
+	$id = $_GET['id'];
+	$result = mysql_query("SELECT *, concat(DATE_FORMAT(Venue_StartDate,'%M %e - '), DATE_FORMAT(Venue_EndDate,'%e, %Y')) as Date_Range From venues WHERE Venue_ID = $id");
+	if($result){
+		$i = 0;
+		$titlecity = mysql_result($result, $i, "Venue_Title");
+		$CityDates = mysql_result($result,$i,'Date_Range');
+		$Title = "Competition: $titlecity";
+		$PageTitle = "$titlecity - $CityDates | Dance Competition | Dreamstar Productions LLC.";	
+}}
+else{$i = 1;}
+
+
+
+$tab = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
+
+
+if (isset($PageTitle))
+	echo "<title>$PageTitle</title>";	
+else
+	echo "<title>Competition | Dreamstar Productions LLC.</title>";
+?>
+<meta name="description" content="Tour Dates - Dreamstar Productions LLC. A  Family Oriented Dance Competition Company" />
+<meta name="keywords" content="Dance Competition, Family Oriented, Dancing Competitions,Dreamstar Dance Competition, Dance Competition Tour, Dance Dreamstar" />
 <?php 
 # Load Layout
 require_once("V2/_CSS_Files/head.php");
-require_once("judges.php");
-
-#Get Location
-if(isset($_GET['Comp'])){$Comp = $_GET['Comp'];}
-else {$Comp = "";}#
-
-switch($Comp){
-	
-	case "TWC14": $FullName = "Twin Cities, MN"; break;	
-	case "DES14": $FullName = "Des Moines, IA"; break;	
-	case "QCA14": $FullName = "Quad Cities, IA"; break;
-	case "MAD14": $FullName = "Madison, WI"; break;
-	case "QCA15": $FullName = "Quad Cities, IA"; break;
-	case "MAD15": $FullName = "Madison, WI"; break;
-	case "DES15": $FullName = "Des Monies, IA"; break;
-	case "TWC15": $FullName = "Twin Cities, MN"; break;
-	case "QCA16": $FullName = "Quad Cities, IA"; break;
-	case "MAD16": $FullName = "Madison, WI"; break;
-	case "DES16": $FullName = "Des Monies, IA"; break;
-	case "TWC16": $FullName = "Twin Cities, MN"; break;
-	
-}
-if ($FullName){$FullName = $FullName." | ";}else{$FullName = "";}
-echo "<title>{$FullName}Competition Information & Results | Dreamstar Productions LLC.</title>";
-
-
-$title = "Competition Information & Results";
-
 
 ?>
-<!-- Light Box -->
-<script type="text/javascript" src="/js/jquery.lightbox-0.5.js"></script>
-<script src="js/galleria/galleria-1.2.9.min.js"></script>
-<script src="js/galleria/plugins/facebook/galleria.facebook.js"></script>
-<!-- End Light Box -->
-
 <div class="containter">
 
 <div class="header"><?php require_once("V2/_CSS_Files/menu.php"); ?></div><!-- End header -->
-<div class="content"><p class="PageTitle"><?php echo $title; ?></p> 
-    
-<?php
-if($Comp == "TWC16"){ ?>
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC16', {facebook: 'album:1150097738374434', height: 600, lightbox: true}); });
-</script>
+<div class="content"><p class="PageTitle"><?php echo $Title; ?></p>
 
-<h1>Twin Cities, MN :: April 29 - 30, 2016</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/04172016-TWC16_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/04172016-TWC16_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 04/17/2016</span></h2>
+<?php  
 
+if ($i == 0){
 
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.1150097738374434.1073741845.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="TWC16"></div>
+$Dates= $CityDates;
 
-<h2>Scores</h2>
-<?php require_once("venue-results16.php");  ?>
-
-<h2>Competition Judges</h2>
-<?php 	
-JacquelineSpreadbury("True");
-EvelynRiceWells("False");
-SamKivi();
-
-} # END TWC16
-elseif($Comp == "DES16"){ ?>
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES16', {facebook: 'album:1131585513558990', height: 600, lightbox: true}); });
-</script>
-
-<h1>Des Moines, IA :: April 1 - 3rd, 2016</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/03172016-DES16_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/03172016-DES16_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 03/17/2016</span></h2>
-
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.1131585513558990.1073741844.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="DES16"></div>
-
-<h2>Scores</h2>
-<?php require_once("venue-results16.php");  ?>
-
-<h2>Competition Judges</h2>
-<?php 	
-JacquelineSpreadbury("True");
-MattPospeshil("False");
-ColleenKosier();
-
-} # END DES16
-elseif($Comp == "MAD16"){ ?>
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD16', {facebook: 'album:1103862982997910', height: 600, lightbox: true}); });
-</script>
-
-<h1>Madison, WI :: Febuary 26 - 28th, 2016</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/02152016-MAD16_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/02152016-MAD16_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 02/15/2016</span></h2>
-
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.1103862982997910.1073741843.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="MAD16"></div>
-
-<h2>Scores</h2>
-<?php require_once("venue-results.php");  ?>
-
-<h2>Competition Judges</h2>
-<?php 	
-EvelynRiceWells("True");
-EricaMcCool("False");
-ColleenKosier();
-
-} # END MAD16
-elseif($Comp == "QCA16"){ ?>
-
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#QCA16', {facebook: 'album:1087922411258634', height: 600, lightbox: true}); });
-</script>
-
-<h1>Quad Cities, IA :: January 29 - 31st, 2016</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/01182016-QCA16_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/01182016-QCA16_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 01/18/2016</span></h2>
-
-<h2>Master Class Flyer - <a class="dreamstar-links" href="_PDF_Files/master-class/QCA16-MasterClass.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/master-class/QCA16-MasterClass.pdf']);"target="_blank">View PDF</a></h2>
-
-
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.1087922411258634.1073741842.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="QCA16"></div>
+$SDate=date("M j, Y",strtotime(mysql_result($result,$i,'Venue_StartDate')));
+$EDate=date("M j, Y",strtotime(mysql_result($result,$i,'Venue_EndDate')));
+$start_date = date("Y-m-d",strtotime(mysql_result($result,$i,'Venue_StartDate')));
+$end_date = date("Y-m-d",strtotime(mysql_result($result,$i,'Venue_EndDate')));
+$Location=mysql_result($result,$i,"Venue_Title");
+$Venue=mysql_result($result,$i,"Venue_Name");
+$Address=mysql_result($result,$i,"Venue_Address");
+$City=mysql_result($result,$i,"Venue_City").", ".mysql_result($result,$i,"Venue_State");
+$State=mysql_result($result,$i,"Venue_State");
+$RealCity = mysql_result($result,$i,"Venue_City");
+$Zip=mysql_result($result,$i,"Venue_Zip");
+$info= "";
 
 
 
-<h2>Scores</h2>
-<?php require_once("venue-results.php");  ?>
 
-<h2>Competition Judges</h2>
-<?php 	
-	JacquelineSpreadbury("True");
-	EricaMcCool("False");
-	ColleenKosier();
+/*
+	$HotelName=mysql_result($result,$i,'Hotel_Name');
+	$HAddress=mysql_result($result,$i,"Hotel_Address");
+	$HCitySt=mysql_result($result,$i,"Hotel_CitySt");
+	$HZip=mysql_result($result,$i,"Hotel_Zip");
+	$HPhone=mysql_result($result,$i,'Hotel_Phone');
+	$HEmail=mysql_result($result,$i,'Hotel_Email');
+	$HWebsite=mysql_result($result,$i,'Hotel_Website');
+	$HNotes=mysql_result($result,$i,'Hotel_Notes');
+	$HShow=mysql_result($result,$i,'Show_Hotel');	
+
+*/	
+
 	
-} # END QCA16
-elseif($Comp == "TWC15"){ ?>
 
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC15', {facebook: 'album:946622818721928', height: 600, lightbox: true}); });
-</script>
+// Figures Required Dates
 
-<h1>Twin Cities, MN :: May 1-3rd, 2015</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/04222015-TWC15_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/04222015-TWC15_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 04/22/2015</span></h2>
+	// Get Vars
 
-<h2>Master Class Flyer - <a class="dreamstar-links" href="_PDF_Files/master-class/TWC15-MasterClass.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/master-class/TWC15-MasterClass.pdf']);"target="_blank">View PDF</a></h2>
+	$RawTime = strtotime(mysql_result($result,$i,'Venue_StartDate'));
+	$RegisterRaw = strtotime("-30 days" ,$RawTime);
+	if($id == 14){$RebateRaw = strtotime("-41 days" ,$RawTime);}
+	else {$RebateRaw = strtotime("-45 days" ,$RawTime);}
+
+	// Rebates need to be postmarked 45 Days Before Published Start
+	$Rebate_Date = date("M j, Y",$RebateRaw);
+
+	// All must be Registered 30 Days Before Published Start Date
+	$Register_Date = date("M j, Y",$RegisterRaw);	
+
+	// Get today information!
+	date_default_timezone_set('UTC');
+	$CurrentDate = strtotime(date('c'));
+}?>
 
 
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.946622818721928.1073741840.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="TWC15"></div>
+    <?php  if ($i == 0) {?>
+
+    <div>
+        <font size="+2">
+        <?php echo $SDate." thru ".$EDate; ?>
+      	</font>
+    </div>
+
+    <div id='Venue_Location' class="Venue_Location">
+    	Event Location </br>
+        <font size="+1">
 
 
-<h2>Scores</h2>
-<?php require_once("venue-results.php");  ?>
+		</font>
+    </div>
 
-<h2>Competition Judges</h2>
-<?php 	
-	KimMunn("True");
-	SamKivi();
-	ColleenKosier();
+	<?php if(in_array($id, array(11, 12, 14, 15, 16, 17, 18, 19, 20, 21,22,23))){		
+		switch ($id) {
+			case 11: $CompName = "MAD14"; break;
+			case 12: $CompName = "QCA14"; break;
+			case 14: $CompName = "DES14"; break;
+			case 15: $CompName = "TWC14"; break;
+			case 16: $CompName = "QCA15"; break;
+			case 17: $CompName = "MAD15"; break;
+			case 18: $CompName = "DES15"; break;
+			case 19: $CompName = "TWC15"; break;
+			case 20: $CompName = "QCA16"; break;
+			case 21: $CompName = "MAD16"; break;
+			case 22: $CompName = "DES16"; break;
+			case 23: $CompName = "TWC16"; break;
+					
+		}
+	?>
+        
+	<div id='Venue_Results' class="Venue_Location">
+    	Competition Schedule/Results<br />
+        <span style="padding-left:25px;font-size:18px;">
+        <a href="/results.php?Comp=<?php echo $CompName; ?>" style="color:#009">Click here</a></span>
+    </div>
+    <?php } ?>
+
+    <div id='Venue_Dates' class='Venue_Dates'>
+<?php if ($CurrentDate <= $RebateRaw) {?>
+        Rebate Deadline</br>
+    	<font size="+1">
+		<?php 
+		if ($CurrentDate <= $RebateRaw){
+			echo $tab."Must be Postmarked by: ".$Rebate_Date;?><br/>
+    	    <?php echo $tab; ?><a href="/rebates.php" style="color:#009">View Rebates</a>
+    	</font><?php } 
+
+		else {echo $tab."Sorry the Rebate Deadline has past.";}
+
+		?><br/><br/>
+		<span class="Venue_Dates"><?php }# End Rebate Deadline?>
+		Registration Deadline</span></br>
+
+        <font size="+1">
+
+		<?php 
+
+		// Logic to Hide this Change this line!
+
+		// Last Day to Register was
+
+		if ($CurrentDate <= $RegisterRaw){
+
+		echo $tab."Last Day to Register: ".$Register_Date; ?><br />
+
+        <?php echo $tab; ?><a href="/forms.php" style="color:#009">Registration Forms</a>
+        <?php echo "</br>$tab"; ?><a href="http://dreamstarnow.dancecompgenie.com/" style="color:#009">Register Online</a>
+
+        </font><?php }
+
+		else {echo "</font><span style='font-size:14pt;'>{$tab}Sorry the Registration Deadline has past. <br />{$tab}Please <a href='/contactus.php' style='color:#009' >Contact Us</a> to see if openings are still available</span>";}
+
+		?>
+
+    </div>
+
+	<div id='Venue_Hotel' class='Venue_Hotel' <?php if(!in_array($id, array(11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 27, 28))){echo 'style="xdisplay:none"'; }?>>
+
+    Hotel Information
+
+    <br />
+
+    <font size="+1">
+
+    <?php
+	if($id == 11){
+$hotel=<<<HOTEL
+  Marriott Madison West / Middleton
+  2266 Deming Way
+  Middleton, WI 53562
+HOTEL;
+$hotelPhone="608-208-0100";
+$hotelWeb="http://www.courtyardmadisonwest.com";
+
+}	elseif(in_array($id, array(12, 16))){
+		
+$hotel=<<<HOTEL
+  Quality Inn
+  1000 E. Iowa St.
+  Eldridge, IA 52748
+HOTEL;
+
+$hotelPhone="(563) 285-4600";
+$hotelWeb="";
+	}elseif($id == 14){
 	
-} # END TWC15
-elseif($Comp == "DES15"){ ?>
+$hotel=<<<HOTEL
+  Super 8 Indianola Des Moines
+  1701 N Jefferson Way
+  Indianola, IA 50125
+HOTEL;
 
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES15', {facebook: 'album:926569564060587', height: 600, lightbox: true}); });
-</script>
-
-<h1>Des Moines, IA :: March 27 - 29th, 2015</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/03122015-DES15_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/03122015-DES15_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 03/12/2015</span></h2>
-<?php /*
-<h2>Master Class Flyer - <a class="dreamstar-links" href="_PDF_Files/master-class/MAD15 Master Class.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/master-class/MAD15 Master Class.pdf']);"target="_blank">View PDF</a></h2>
-*/?>
-
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.926569564060587.1073741836.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="DES15"></div>
-
-
-<h2>Scores</h2>
-<?php require_once("venue-results.php");  ?>
-
-<h2>Competition Judges</h2>
-<?php 	
-	EvelynRiceWells("True");
-	JenniferGonzalez("False");
-	ColleenKosier();
+$hotelPhone="(515) 961-0058";
+$hotelWeb="";
 	
-} # END DES15
-elseif($Comp == "MAD15"){ ?>
-
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD15', {facebook: 'album:906165736100970', height: 600, lightbox: true}); });
-</script>
-
-<h1>Madison, WI :: Febuary 20-22th, 2015</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/02142015-MAD15_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/02142015-MAD15_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 02/14/2015</span></h2>
-<h2>Master Class Flyer - <a class="dreamstar-links" href="_PDF_Files/master-class/MAD15 Master Class.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/master-class/MAD15 Master Class.pdf']);"target="_blank">View PDF</a></h2>
-
-
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.906165736100970.1073741835.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="MAD15"></div>
-
-
-<h2>Scores</h2>
-<?php require_once("venue-results.php"); ?>
-
-<h2>Competition Judges</h2>
-<?php 	
-	SaraBartlett("True");
-	EvelynRiceWells("False");
-	SamKivi();
+	}elseif(in_array($id, array(15, 23))){
 	
-} # END MAD15
-elseif($Comp == "QCA15"){ ?>
 
-<script type="text/javascript">
-//$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC14', {facebook: 'album:733899513327594', height: 600, lightbox: true}); });
-</script>
+$hotel=<<<HOTEL
+  Staybridge Suites
+  7821 Elm Creek Blvd.
+  Maple Grove, MN 55369
+HOTEL;
 
-<h1>Quad Cities, IA :: January 30th, 2015</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/01252015-QCA15_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/01252015-QCA15_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 01/25/2015</span></h2>
-<h2>Master Class Flyer - <a class="dreamstar-links" href="/MasterClassQC2015.php" >View </a></h2>
+$hotelPhone="(763) 494-8856";
+$hotelWeb="";
+	
+}
 
-<?php /*
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.733899513327594.1073741833.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="TWC14"></div>
-*/?>
+	# DeForest Comfort Inn
+	
+	elseif(in_array($id, array(17, 21))){
+	
 
-<h2>Scores</h2>
-<?php require_once("venue-results.php");?>
+$hotel=<<<HOTEL
+  Comfort Inn & Suites
+  5025 County Highway V
+  DeForest, WI 53532
+HOTEL;
 
-<h2>Competition Judges</h2>
-<?php 	
-	JenniferGonzalez("True");
-	SamKivi();
-	ColleenKosier();
+$hotelPhone="(608) 846-9100";
+$hotelWeb="";
+	
+}
+		
+	elseif(in_array($id, array(18, 22, 25))){
+	
+$hotel=<<<HOTEL
+  Hampton Inn Des Moines Airport
+  5001 Fleur Drive
+  Des Moines, IA 50321
+HOTEL;
 
-} # END QCA15
-elseif($Comp == "TWC14"){ ?>
+$hotelPhone="(515) 287-7300";
+$hotelWeb="";
+	
+}
+	
+	elseif($id == 19){
+	
+$hotel=<<<HOTEL
+  Boarders Inn & Suites
+  1801 Lavender Dr
+  Faribault, MN 55021
+HOTEL;
 
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC14', {facebook: 'album:733899513327594', height: 600, lightbox: true}); });
-</script>
+$hotelPhone="(507) 334-9464";
+$hotelWeb="";
+	
+}
+	
+	elseif(in_array($id, [20, 24])){
+	
+$hotel=<<<HOTEL
+  Country Inn & Suites
+  140 East 55th Street
+  Davenport, IA 52806
+HOTEL;
 
-<h1>Twin Cities, MN :: April 26-27th, 2014</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/04172014-TWC14_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/04172014-TWC14_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 04/17/2014</span></h2>
-<h2>Master Class Flyer - <a class="dreamstar-links" href="_PDF_Files/master-class/TWC14-Evelyn_Rice_Master_Class_Flyer.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/master-class/TWC14-Evelyn_Rice_Master_Class_Flyer.pdf']);"target="_blank">View PDF</a></h2>
+$hotelPhone="(563) 388-6444";
+$hotelWeb="";
+	
+}
+	elseif($id == 27){
 
+$hotel=<<<HOTEL
+  Holiday Inn Express of DeForest
+  7184 Morrisonville Rd.
+  Deforest, WI 53532
+HOTEL;
 
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.733899513327594.1073741833.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="TWC14"></div>
+$hotelPhone="608-846-8686";
+$hotelWeb="";
+	
+}
+	elseif($id == 28){
 
+$hotel=<<<HOTEL
+  Hilton Garden Inn Bloomington
+  5140 American Blvd. W.
+  Bloomington, MN 55437
+HOTEL;
 
-<h2>Scores</h2>
-<?php require_once("venue-results.php");?>
-
-<h2>Competition Judges</h2>
-<?php 	
-	EvelynRiceWells("True");
-	SamKivi();
-	ColleenKosier();
-
-} # END TWC14
-elseif($Comp == "DES14"){ ?>
-
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES14', {facebook: 'album:719638761420336', height: 600, lightbox: true}); });
-</script>
-
-<h1>Des Moines, IA :: March 29th, 2014</h1>
-<h2>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/03202014-DES14_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/03202014-DES14_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 03/20/2014</span></h2>
-
-
-<h2> Pictures - <a href="https://www.facebook.com/media/set/?set=a.719638761420336.1073741832.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h2>
-<div id="DES14"></div>
-
-<h2>Scores</h2>
-<?php require_once("venue-results.php"); ?>
-
-<h2>Competition Judges</h2>
-<?php 
-	JenniferGonzalez("True");	
-	EvelynRiceWells("False");
-	ColleenKosier();
-
-} # END DES14
-elseif($Comp == "QCA14"){ ?>
-
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#QCA14', {facebook: 'album:704733186244227', height: 600, lightbox: true}); });
-</script>
-
-<h1>Quad Cities, IA :: March 1st, 2014</h1>
-<h3>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/02262014-QCA14_Schedule.pdf" onClick="_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/02262014-QCA14_Schedule.pdf']);" target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 02/26/2014</span></h3>
-
-
-<h3> Pictures - <a href="https://www.facebook.com/media/set/?set=a.704733186244227.1073741831.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h3>
-<div id="QCA14"></div>
-
-<h2>Scores</h2>
-<?php require_once("venue-results.php"); ?>
+$hotelPhone="952-831-1012";
+$hotelWeb="";
+	
+}
 
 
-<h2>Competition Judges</h2>
-<?php 
-	JenniferGonzalez("True");	
-	SaraBartlett("False");
-	SamKivi();
+	if (true){
+		echo "<b>".$tab.$HotelName."</b><br/>".$tab.$HAddress."<br/>".$tab.$HCitySt." ".$HZip."<br/>";
+		if (strlen($HPhone)>1)
+			echo $tab.$HPhone."<br/>";
+		if (strlen($HWebsite)>1)
+			echo $tab.$HWebsite."<br/>";	
+		if (strlen($HNotes)>1)
+			echo $tab.$HNotes."<br/>";
+		echo $tab.'<a style="color:#009" href="http://maps.google.com/maps?geocode=&q=('.$HotelName.") ".$HAddress." ".$HZip.'">Should be nothing here</a>';			
+	}
+	
+	
 
-} # END QCA14
-elseif($Comp == "MAD14"){ ?>
-
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD14', {facebook: 'album:686563244727888', height: 600, lightbox: true}); });
-</script>
-
-<h2>Madison, WI :: January 26, 2014</h2>
-<h3>Competition Schedule - <a class="dreamstar-links" href="/_PDF_Files/competition-schedules/01072014-MAD14_Schedule.pdf" onClick=”_gaq.push(['_trackPageview', '/_PDF_Files/competition-schedules/01072014-MAD14_Schedule.pdf']);” target="_blank">View PDF</a><span style="font-size:12px;font-weight:100;"> - Updated 01/07/2014</span></h3>
-
-<h3> Pictures - <a href="https://www.facebook.com/media/set/?set=a.686563244727888.1073741829.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h3>
-<div id="MAD14"></div>
-<h3>Video</h3>
-<iframe src="//www.youtube.com/embed/uNuX6VvatnE" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
-<h2>Scores</h2>
-<?php require_once("venue-results.php"); ?>
-<h3>Competition Judges</h3>
-<?php 
-	KimHale("True");	
-	SaraBartlett("False");
-	ColleenKosier();
 ?>
 <?php
-} # END MAD14
-elseif($Comp == "MIN13"){ ?>
+  
+function create_slug($string){
+   $slug=preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
+   return strtolower( trim($slug, '-') );
+}
 
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MIN13', {facebook: 'album:553535484697332', height: 600, lightbox: true}); });
-</script>
+$RealCity = create_slug($RealCity);
+		
+echo <<<YAML
+<pre><code>
+
+filename: $start_date-$RealCity.md
+
+---
+start_date: $start_date
+end_date: $end_date
+state: $State
+
+# competition title is derived from the file name,
+# or you can override it here
+title: 
+
+competition_address: |
+  $Venue
+  $Address
+  $City $Zip
+
+hotel_address: |
+$hotel
+
+hotel_phone: $hotelPhone
+hotel_web: $hotelWeb
+
+discount_is_available: true
+---
+
+
+
+</code></pre>
+YAML;
+		
+				
+?>
+
+    </font>
+
+    </div>
     
-<h2>Minneapolis, MN :: May 10, 2013 - May 11, 2013</h2>
-<h3> Pictures - <a href="https://www.facebook.com/media/set/?set=a.553535484697332.1073741827.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" target="_blank">View Pictures on Facebook</a></h3>
-<div id="MIN13"></div>
-
-<h2>Scores</h2>
-<?php require_once("venue-results.php"); ?>
 
 <?php 
-} # END MIN13
-elseif($Comp == "DES13"){ ?>
+// Ends N/A Hide all errors exception! 
+} 
 
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES13', {facebook: 'album:542105755840305', height: 600, lightbox: true}); });
-</script>
+# If No Venue is Selected
+else {echo "<h2> Select a Tour Location from the menu to the right.</h2>";} 
 
-<h2>Des Moines, IA :: April 6, 2013</h2>
-<h3> Pictures - <a href="https://www.facebook.com/media/set/?set=a.542105755840305.1073741826.124591620925056&type=1&l=1b6e061ec9" class="dreamstar-links" target="_blank">View Pictures on Facebook</a></h3>
-<div id="DES13"></div>
-<h3>Video</h3>
-<iframe src="//www.youtube.com/embed/hMsvkkZAYqo" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
-<h3>Scores - <a href="_PDF_Files/competition-results/DES13-Results.pdf" class="dreamstar-links" target="_blank">View PDF</a></h3>
-<?php require_once("venue-results.php"); ?>
-
-<?php 
-} # END DES13
-elseif($Comp == "DAV13"){ ?>
-
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DAV13', {facebook: 'album:523441851040029', height: 600, lightbox: true}); });
-</script>
-       
-<h2>Davenport, IA :: Feb 22, 2013 - Feb 24, 2013</h2>
-<h3> Pictures - View Pictures on Facebook (<a href="https://www.facebook.com/media/set/?set=a.523441851040029.129031.124591620925056&type=1&l=32374ae950" class="dreamstar-links" >Day 1</a>/<a href="https://www.facebook.com/media/set/?set=a.523930857657795.129127.124591620925056&type=1&l=2873b50bc5" class="dreamstar-links" target="_blank">Day 2</a>)</h3>
-<div id="DAV13"></div>
-<h3>Video's</h3>
-<a href="http://youtu.be/d7G3Sasveog" class="dreamstar-links" target="_blank">Teen/Senior Dance Challenge</a>
-<iframe src="//www.youtube.com/embed/d7G3Sasveog" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
-<a href="http://youtu.be/rliVgqUAWGw" class="dreamstar-links" target="_blank">Harlem Shake</a>
-<iframe src="//www.youtube.com/embed/rliVgqUAWGw" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
-<h3>Scores - <a href="_PDF_Files/competition-results/DAV13-Results.pdf" class="dreamstar-links" target="_blank">View PDF</a></h3>
-<?php require_once("venue-results.php"); ?>
-
-
-<?php 
-} # END DAV13
-elseif($Comp == "MAD13"){ ?>
-
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD13', {facebook: 'album:508136505903897', height: 600, lightbox: true}); });
-</script>
-
-<h2>Madison, WI :: Jan 25, 2013 - Jan 27, 2013</h2>
-<h3>Pictures - <a href="https://www.facebook.com/media/set/?set=a.508136505903897.127371.124591620925056&type=1&l=5de22b6008" class="dreamstar-links" >View Pictures on Facebook</a></h3> 
-<div id="MAD13"></div>
-<h3>Video - <a href="http://youtu.be/8vR7SPserT8" class="dreamstar-links" >Watch on YouTube</a></h3>
-<iframe src="//www.youtube.com/embed/8vR7SPserT8" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
-<h3>Scores - <a href="_PDF_Files/competition-results/MAD13-Results.pdf" class="dreamstar-links">View PDF</a></h3>
-<?php require_once("venue-results.php"); ?>
-
-<?php 
-} # END MAD13
-elseif($Comp == "DAV11"){ ?>
-
-<script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DAV11', {facebook: 'album:163433500374201', height: 600, lightbox: true}); });
-</script>
-
-<h2>Davenport, IA :: Jan 28, 2011 - Jan 30, 2011</h2>
-<h3> Pictures - <a href="https://www.facebook.com/media/set/?set=a.163433500374201.47660.124591620925056&type=1&l=6f91a22c0b" class="dreamstar-links" >View Pictures on Facebook</a></h3>
-<div id="DAV11"></div>
-<h3>Video - <a href="http://www.youtube.com/watch?v=nwJe8PU-usg&amp;feature=g-upl" class="dreamstar-links">Watch On Youtube</a></h3>
-<iframe src="//www.youtube.com/embed/nwJe8PU-usg" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
-<h3>Scores - <a href="_PDF_Files/competition-results/DAV11-Results.pdf" class="dreamstar-links" >View PDF</a></h3>
-<?php require_once("venue-results.php"); ?>
-
-<?php } # End DAV11 
-else { ?>
-
-<h2> Choose a Competition to the Right -> </h2>
-
-<?php } #End Else ?>
+?>
+  
 </div><!-- End content  -->
-<div class="resultnav"><?php require_once("V2/_CSS_Files/resultnav.php"); /*?></div><!-- End resultnav -->
-<div class="tourdates"><?php require_once("V2/_CSS_Files/dates.php");*/?> </div> <!-- End tourdates -->
+<div class="tourdates"><?php require_once("V2/_CSS_Files/dates.php");?> </div> <!-- End tourdates -->
 <div class="footer"><?php require_once("V2/_CSS_Files/footer.php");?> </div> <!-- End footer -->
 </div> <!-- Containter End -->
 </body>
 </html>
-
-
 
