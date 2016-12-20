@@ -108,31 +108,7 @@ function ColleenKosier (){ ?>
 	<div class="Bio-Mug"><img class="Bio-Mug" src="/_JPG_Files/headshots/web-headshots/Colleen-Kosier.jpg" alt="Judge Headshot"/></div>
 	<div class="Bio-Name">Colleen Kosier</div>
 	<div class="Bio-Title">Competition Judge</div>
-	<div class="Bio-Info"><p>Colleen Kosier began her dance and tumbling education at the age of 5.  She continued with a
-
-double major in Dance and Physical Education at Illinois State University where she enjoyed 
-
-traveling, performing, and competing with the Illinois State Dance Theatre.  </p><p>She opened her 
-
-own studio in 1979 and has enjoyed teaching dance and tumbling for over 30 years.  Currently 
-
-Colleen is the owner and director of two dance schools in Illinois.  She also teaches classes at 
-
-JDC and at National Workshops.  She is the Director and Choreographer for the Celtic Rhythm 
-
-Dancers and the American Rhythm Cloggers.  </p><p>Her dancers and choreography have won top 
-
-honors in competition, have performed at half-time shows for college and semi-pro basketball 
-
-games, opened minor league baseball games, performed at county fairs, state fairs, Celtic 
-
-Festivals around the U.S. and five times at Walt Disney World.  Colleen and her dancers toured 
-
-and performed with the renowned Celtic Band “Switchback” across the beautiful country of 
-
-Ireland and has headlined with the Canadian Band “Searson”.  </p><p>Colleen wishes all today’s 
-
-dancers a great performance and a life time of enjoying the beautiful art of dance.</p>
+	<div class="Bio-Info"><p>Colleen has had an extensive dance career in performance, competition, and as a dance instructor and choreographer for over 30 years. She has choreographed and directed her dancers in five Walt Disney World performances. Colleen's students have traveled all over the United States performing with the band Switchback, toured with the band across Ireland performing before a packed house at Castlebar's Linenhall Performing Arts Center, in Westport at Matt Malloy's Pub and at Fitzpatrick Castle in Killiney, Ireland. Her dancers have also headlined with the Canadian band Searson at the Quad Cities Celtic Festival and have been featured on KWQC TV6 Fran Riley Features. Colleen's students have taken top honors in regional and national dance competitions along with receiving Most Entertaining, Most Memorable, Judges Choice Award and Highest Scoring Group Performance awards. Colleen has won numerous Competition Top Teacher and Choreography awards.  She has also choreographed fourteen high school and community theater musicals as well as taught classes at Jennifer's Dance Center in Morrison, IL. Colleen loves teaching clogging at national workshops and is a judge for regional and national dance competitions across the United States. Colleen directs the C3 Dance Team made up of the Celtic Rhythm Dancers and American Rhythm Cloggers.</p>
 	</div>
 </div>
 <?php }
