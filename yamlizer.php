@@ -345,7 +345,7 @@ $RealCity = create_slug($RealCity);
 echo <<<YAML
 <pre><code>
 
-filename: $start_date-$RealCity.md
+filename: $start_date-$RealCity.html
 
 ---
 start_date: $start_date
