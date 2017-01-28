@@ -73,11 +73,14 @@ $title = "Competition Information & Results";
 <!--  -->
 <!--  -->
 
+<?php ob_start(); ?>
 
 <?php
 if($Comp == "TWC16"){ ?>
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC16', {facebook: 'album:1150097738374434', height: 600, lightbox: true}); });
+  $(function() {
+    //Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC16', {facebook: 'album:1150097738374434', height: 600, lightbox: true}); 
+  });
 </script>
 
 <h1>Twin Cities, MN :: April 29 - 30, 2016</h1>
@@ -99,7 +102,7 @@ SamKivi();
 } # END TWC16
 elseif($Comp == "DES16"){ ?>
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES16', {facebook: 'album:1131585513558990', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES16', {facebook: 'album:1131585513558990', height: 600, lightbox: true}); });
 </script>
 
 <h1>Des Moines, IA :: April 1 - 3rd, 2016</h1>
@@ -120,7 +123,7 @@ ColleenKosier();
 } # END DES16
 elseif($Comp == "MAD16"){ ?>
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD16', {facebook: 'album:1103862982997910', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD16', {facebook: 'album:1103862982997910', height: 600, lightbox: true}); });
 </script>
 
 <h1>Madison, WI :: Febuary 26 - 28th, 2016</h1>
@@ -142,7 +145,7 @@ ColleenKosier();
 elseif($Comp == "QCA16"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#QCA16', {facebook: 'album:1087922411258634', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#QCA16', {facebook: 'album:1087922411258634', height: 600, lightbox: true}); });
 </script>
 
 <h1>Quad Cities, IA :: January 29 - 31st, 2016</h1>
@@ -169,7 +172,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "TWC15"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC15', {facebook: 'album:946622818721928', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC15', {facebook: 'album:946622818721928', height: 600, lightbox: true}); });
 </script>
 
 <h1>Twin Cities, MN :: May 1-3rd, 2015</h1>
@@ -195,7 +198,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "DES15"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES15', {facebook: 'album:926569564060587', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES15', {facebook: 'album:926569564060587', height: 600, lightbox: true}); });
 </script>
 
 <h1>Des Moines, IA :: March 27 - 29th, 2015</h1>
@@ -221,7 +224,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "MAD15"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD15', {facebook: 'album:906165736100970', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD15', {facebook: 'album:906165736100970', height: 600, lightbox: true}); });
 </script>
 
 <h1>Madison, WI :: Febuary 20-22th, 2015</h1>
@@ -246,7 +249,9 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "QCA15"){ ?>
 
 <script type="text/javascript">
-//$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC14', {facebook: 'album:733899513327594', height: 600, lightbox: true}); });
+$(function() {
+  //Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC14', {facebook: 'album:733899513327594', height: 600, lightbox: true}); 
+});
 </script>
 
 <h1>Quad Cities, IA :: January 30th, 2015</h1>
@@ -271,7 +276,7 @@ elseif($Comp == "QCA15"){ ?>
 elseif($Comp == "TWC14"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC14', {facebook: 'album:733899513327594', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#TWC14', {facebook: 'album:733899513327594', height: 600, lightbox: true}); });
 </script>
 
 <h1>Twin Cities, MN :: April 26-27th, 2014</h1>
@@ -296,7 +301,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "DES14"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES14', {facebook: 'album:719638761420336', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES14', {facebook: 'album:719638761420336', height: 600, lightbox: true}); });
 </script>
 
 <h1>Des Moines, IA :: March 29th, 2014</h1>
@@ -319,7 +324,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "QCA14"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#QCA14', {facebook: 'album:704733186244227', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#QCA14', {facebook: 'album:704733186244227', height: 600, lightbox: true}); });
 </script>
 
 <h1>Quad Cities, IA :: March 1st, 2014</h1>
@@ -343,7 +348,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "MAD14"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD14', {facebook: 'album:686563244727888', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD14', {facebook: 'album:686563244727888', height: 600, lightbox: true}); });
 </script>
 
 <h2>Madison, WI :: January 26, 2014</h2>
@@ -352,7 +357,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 <h3> Pictures - <a href="https://www.facebook.com/media/set/?set=a.686563244727888.1073741829.124591620925056&type=1&l=8d4954c967" class="dreamstar-links" >View Pictures on Facebook</a></h3>
 <div id="MAD14"></div>
 <h3>Video</h3>
-<iframe src="//www.youtube.com/embed/uNuX6VvatnE" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
+<iframe src="//www.youtube.com/embed/uNuX6VvatnE" frameborder="0" allowfullscreen></iframe>
 <h2>Scores</h2>
 <?php require_once("venue-results.php"); ?>
 <h3>Competition Judges</h3>
@@ -366,7 +371,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "MIN13"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MIN13', {facebook: 'album:553535484697332', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MIN13', {facebook: 'album:553535484697332', height: 600, lightbox: true}); });
 </script>
     
 <h2>Minneapolis, MN :: May 10, 2013 - May 11, 2013</h2>
@@ -381,14 +386,14 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "DES13"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES13', {facebook: 'album:542105755840305', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DES13', {facebook: 'album:542105755840305', height: 600, lightbox: true}); });
 </script>
 
 <h2>Des Moines, IA :: April 6, 2013</h2>
 <h3> Pictures - <a href="https://www.facebook.com/media/set/?set=a.542105755840305.1073741826.124591620925056&type=1&l=1b6e061ec9" class="dreamstar-links" target="_blank">View Pictures on Facebook</a></h3>
 <div id="DES13"></div>
 <h3>Video</h3>
-<iframe src="//www.youtube.com/embed/hMsvkkZAYqo" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
+<iframe src="//www.youtube.com/embed/hMsvkkZAYqo" frameborder="0" allowfullscreen></iframe>
 <h3>Scores - <a href="_PDF_Files/competition-results/DES13-Results.pdf" class="dreamstar-links" target="_blank">View PDF</a></h3>
 <?php require_once("venue-results.php"); ?>
 
@@ -397,7 +402,7 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "DAV13"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DAV13', {facebook: 'album:523441851040029', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DAV13', {facebook: 'album:523441851040029', height: 600, lightbox: true}); });
 </script>
        
 <h2>Davenport, IA :: Feb 22, 2013 - Feb 24, 2013</h2>
@@ -405,9 +410,9 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 <div id="DAV13"></div>
 <h3>Video's</h3>
 <a href="http://youtu.be/d7G3Sasveog" class="dreamstar-links" target="_blank">Teen/Senior Dance Challenge</a>
-<iframe src="//www.youtube.com/embed/d7G3Sasveog" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
+<iframe src="//www.youtube.com/embed/d7G3Sasveog" frameborder="0" allowfullscreen></iframe>
 <a href="http://youtu.be/rliVgqUAWGw" class="dreamstar-links" target="_blank">Harlem Shake</a>
-<iframe src="//www.youtube.com/embed/rliVgqUAWGw" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
+<iframe src="//www.youtube.com/embed/rliVgqUAWGw" frameborder="0" allowfullscreen></iframe>
 <h3>Scores - <a href="_PDF_Files/competition-results/DAV13-Results.pdf" class="dreamstar-links" target="_blank">View PDF</a></h3>
 <?php require_once("venue-results.php"); ?>
 
@@ -417,14 +422,14 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "MAD13"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD13', {facebook: 'album:508136505903897', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#MAD13', {facebook: 'album:508136505903897', height: 600, lightbox: true}); });
 </script>
 
 <h2>Madison, WI :: Jan 25, 2013 - Jan 27, 2013</h2>
 <h3>Pictures - <a href="https://www.facebook.com/media/set/?set=a.508136505903897.127371.124591620925056&type=1&l=5de22b6008" class="dreamstar-links" >View Pictures on Facebook</a></h3> 
 <div id="MAD13"></div>
 <h3>Video - <a href="http://youtu.be/8vR7SPserT8" class="dreamstar-links" >Watch on YouTube</a></h3>
-<iframe src="//www.youtube.com/embed/8vR7SPserT8" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
+<iframe src="//www.youtube.com/embed/8vR7SPserT8" frameborder="0" allowfullscreen></iframe>
 <h3>Scores - <a href="_PDF_Files/competition-results/MAD13-Results.pdf" class="dreamstar-links">View PDF</a></h3>
 <?php require_once("venue-results.php"); ?>
 
@@ -433,14 +438,14 @@ $(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.mi
 elseif($Comp == "DAV11"){ ?>
 
 <script type="text/javascript">
-$(function() {Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DAV11', {facebook: 'album:163433500374201', height: 600, lightbox: true}); });
+// $(function() { Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js'); Galleria.run('#DAV11', {facebook: 'album:163433500374201', height: 600, lightbox: true}); });
 </script>
 
 <h2>Davenport, IA :: Jan 28, 2011 - Jan 30, 2011</h2>
 <h3> Pictures - <a href="https://www.facebook.com/media/set/?set=a.163433500374201.47660.124591620925056&type=1&l=6f91a22c0b" class="dreamstar-links" >View Pictures on Facebook</a></h3>
 <div id="DAV11"></div>
 <h3>Video - <a href="http://www.youtube.com/watch?v=nwJe8PU-usg&amp;feature=g-upl" class="dreamstar-links">Watch On Youtube</a></h3>
-<iframe src="//www.youtube.com/embed/nwJe8PU-usg" frameborder="0" allowfullscreen style="width: inherit; height:400px;"></iframe>
+<iframe src="//www.youtube.com/embed/nwJe8PU-usg" frameborder="0" allowfullscreen></iframe>
 <h3>Scores - <a href="_PDF_Files/competition-results/DAV11-Results.pdf" class="dreamstar-links" >View PDF</a></h3>
 <?php require_once("venue-results.php"); ?>
 
@@ -451,6 +456,12 @@ else { ?>
 
 <?php } #End Else ?>
 
+
+<?php $ob_output = ob_get_clean(); ?>
+
+<pre><code>
+<?php echo htmlspecialchars($ob_output); ?>
+</code></pre>
 <!--  -->
 <!--  -->
 <!--  -->
