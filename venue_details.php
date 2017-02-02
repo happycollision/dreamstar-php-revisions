@@ -109,6 +109,12 @@ $info= "";
         <?php echo $SDate." thru ".$EDate; ?>
       	</font>
     </div>
+    
+    <?php if ($id == 24) { ?>
+      <a style="color:#009; font-size: 1.5em" href="/GeneralScheduleOutline.docx">General Schedule</a><br/>
+      <a style="color:#009; font-size: 1.5em" href="/ProgramScheduleQC2017.docx">Program Schedule</a>
+    
+    <?php }?>
 
     <div id='Venue_Location' class="Venue_Location">
     	Event Location </br>
