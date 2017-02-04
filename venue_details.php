@@ -111,8 +111,8 @@ $info= "";
     </div>
     
     <?php if ($id == 24) { ?>
-      <a style="color:#009; font-size: 1.5em" href="/GeneralScheduleOutline.docx">General Schedule</a><br/>
-      <a style="color:#009; font-size: 1.5em" href="/ProgramScheduleQC2017.docx">Program Schedule</a>
+      <a style="color:#009; font-size: 1.5em" href="/GeneralScheduleOutline.pdf">General Schedule</a><br/>
+      <a style="color:#009; font-size: 1.5em" href="/ProgramScheduleQC2017.pdf">Program Schedule</a>
     
     <?php }?>
 
