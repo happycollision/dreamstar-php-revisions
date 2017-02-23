@@ -104,20 +104,20 @@ $info= "";
 
     <?php  if ($i == 0) {?>
 
+    <?php if ($id == 24) { ?>
+      <a style="color:#009; font-size: 1.5em" href="/GeneralScheduleOutline.pdf">General Schedule</a><br/>
+      <a style="color:#009; font-size: 1.5em" href="/ProgramScheduleQC2017.pdf">Program Schedule</a>
+    
+    <?php } else if ($id == 27) { ?>
+      <a style="color:#009; font-size: 2em" href="/DreamstarScheduleMadison2017.pdf">Program Schedule</a><br/><br/>
+    <? }?>
+
     <div>
         <font size="+2">
         <?php echo $SDate." thru ".$EDate; ?>
       	</font>
     </div>
     
-    <?php if ($id == 24) { ?>
-      <a style="color:#009; font-size: 1.5em" href="/GeneralScheduleOutline.pdf">General Schedule</a><br/>
-      <a style="color:#009; font-size: 1.5em" href="/ProgramScheduleQC2017.pdf">Program Schedule</a>
-    
-    <?php } else if ($id == 27) {?>
-      <a style="color:#009; font-size: 1.5em" href="/DreamstarScheduleMadison2017.pdf">Program Schedule</a>
-    <? }?>
-
     <div id='Venue_Location' class="Venue_Location">
     	Event Location </br>
         <font size="+1">
