@@ -114,7 +114,9 @@ $info= "";
       <a style="color:#009; font-size: 1.5em" href="/GeneralScheduleOutline.pdf">General Schedule</a><br/>
       <a style="color:#009; font-size: 1.5em" href="/ProgramScheduleQC2017.pdf">Program Schedule</a>
     
-    <?php }?>
+    <?php } else if ($id == 27) {?>
+      <a style="color:#009; font-size: 1.5em" href="/DreamstarScheduleMadison2017.pdf">Program Schedule</a>
+    <? }?>
 
     <div id='Venue_Location' class="Venue_Location">
     	Event Location </br>
