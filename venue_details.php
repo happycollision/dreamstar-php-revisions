@@ -108,8 +108,11 @@ $info= "";
       <a style="color:#009; font-size: 1.5em" href="/GeneralScheduleOutline.pdf">General Schedule</a><br/>
       <a style="color:#009; font-size: 1.5em" href="/ProgramScheduleQC2017.pdf">Program Schedule</a>
     
-    <?php } else if ($id == 27) { ?>
+    <?php } if ($id == 27) { ?>
       <a style="color:#009; font-size: 2em" href="/DreamstarScheduleMadison2017.pdf">Program Schedule</a><br/><br/>
+
+    <?php } else if ($id == 25) { ?>
+      <a style="color:#009; font-size: 2em" href="/DreamstarScheduleDesMoines2017.pdf">Program Schedule</a><br/><br/>
     <? }?>
 
     <div>
