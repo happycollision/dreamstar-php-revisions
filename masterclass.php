@@ -18,7 +18,7 @@
     <div class="content">
       <p class="PageTitle"><?php echo $title; ?></p>
       
-      <p>Dreamstar is happy to announce that we are able to offer a Jazz Master Class taught by Jacqueline Spreadbury Feb. 3rd at 7 PM at North Scott High School in Eldridge, IA. I have attached a promotional flyer that you can use to let your dancers know about this opportunity. The cost of this energetic 1 1/2 hour class is $50 for dancers registered to compete at our Dreamstar Dance Competition and $60 for those dancers that are not registered.</p>
+      <p>Dreamstar is happy to announce that we are able to offer a Jazz Master Class taught by Jacqueline Spreadbury March 24th at 7 PM at Indianola High School in Indianola, IA. We have a <a href="/2017-indianola-jazz-class.pdf" style="color:blue">promotional flyer</a> that you can use to let your dancers know about this opportunity. The cost of this energetic 1 1/2 hour class is $50 for dancers registered to compete at our Dreamstar Dance Competition and $60 for those dancers that are not registered.</p>
 
 <p>You can download application forms below and mail them with your payment to Dreamstar Productions, PO Box 101, Eldridge, IA 52748.</p>
 
